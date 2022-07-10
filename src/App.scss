@@ -1,0 +1,116 @@
+$white: #fff;
+$grey: grey;
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post {
+    border-radius: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    background-color: rgb(21, 32, 43);
+    .container {
+        padding: 15px;
+        .box {
+            display: flex;
+            align-items: flex-start;
+            .box__image {
+                width: 80px;
+                margin-right: 15px;
+                margin-top: -5px;
+                .user__image {
+                    width: 100%;
+                    border-radius: 50%;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .content {
+                .header {
+                    margin-bottom: 10px;
+                    .header__username-date {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 10px;
+                        .name {
+                            color: $white;
+                            cursor: pointer;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .nickname {
+                            color: $grey;
+                            &:hover{
+                                cursor: pointer;
+                                color: lighten($color: grey, $amount: 25);
+                            }
+                        }
+                        .date {
+                            color: $grey;
+                        }
+                    }
+                    .header__text {
+                        color: $white;
+                    }
+                }
+            }
+
+            .main {
+                width: 700px;
+                margin-bottom: 15px;
+                .main__image {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+
+            .footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 100px;
+                color: $white;
+                li{
+                    display: flex;
+                    align-items: center;
+                    .mount{
+                        margin: 0;
+                        margin-left: 10px;
+                    }
+                }
+                .footer__comment {
+                    &:hover{
+                        color: darken($color: $white, $amount: 50);
+                        cursor: pointer;
+                    }
+                }
+                .footer__repost {
+                    &:hover{
+                        color: darken($color: $white, $amount: 50);
+                        cursor: pointer;
+                    }
+                }
+                .footer__like {
+                    &:hover{
+                        color: darken($color: $white, $amount: 50);
+                        cursor: pointer;
+                    }
+                }
+                .footer__upload {
+                    &:hover{
+                        color: darken($color: $white, $amount: 50);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
