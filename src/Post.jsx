@@ -8,7 +8,7 @@ const PostComponent = ({data}) => {
     const {name, photo, nickname, content, image, date, comments, reposts, likes} = data
     return(
         <div className="wrapper">
-            <h1>HW 14 React</h1>
+            <h1>HW 15 React</h1>
             <div className="post">  
                 <div className="container">
                     <div className="post__box box">
